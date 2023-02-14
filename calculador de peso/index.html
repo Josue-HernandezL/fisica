@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+    body {
+        background-color: rgba(1, 2, 2, 0.4);;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    h1 {
+        margin-top: 15px;
+        font-family: 'Caveat', cursive;
+        color: rgb(34, 36, 37);
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+
+    .contenedor, .calculoFisica {
+        background: #232526;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: auto;
+        width: 80%;
+        border-radius: 10px;
+
+        -webkit-box-shadow: -1px -1px 31px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px -1px 31px 0px rgba(0,0,0,0.75);
+        box-shadow: -1px -1px 31px 0px rgba(0,0,0,0.75);
+    }
+
+    .contenedor, .formulario  {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .texto {
+        font-family: 'Caveat', cursive;
+        margin: 20px 0;
+        font-size: 40px;
+        color: aliceblue;
+    }
+    #contraPeso, #barra, #pesoBarra {
+        margin: 0 0 20px 0;
+        height: 50px;
+        text-align: center;
+        font-family: 'Caveat', cursive;
+        color: rgb(54, 56, 58);
+        border: none;
+        border-radius: 10px;
+    }
+
+        .css-button-shadow--sand {
+            margin: 0 0 30px 0;
+            font-family: 'Caveat', cursive;
+            min-width: 130px;
+            height: 30px;
+            color: #524f4f;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            background-color: #ced4da;
+            box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+          }
+          .css-button-shadow--sand:active {
+            box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
+          }
+          .calculoFisica {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px 0;
+          }
+
+          .resultado {
+            font-family: 'Caveat', cursive;
+            font-size: 30px;
+            color: aliceblue;
+            margin: 10px 0;
+            text-align: center;
+          }
+
+
+    </style>
+
+</head>
+<body>
+
+        <section class="titulo">
+
+            <h1>Balanza granataria</h1>
+
+        </section>
+
+        <section class="contenedor">
+
+            <article class="formulario">
+
+                <label class="texto" for="">Peso de la barra:</label>
+                <input type="number" name="" id="pesoBarra" placeholder="Ejemplo: 100g">
+                <label class="texto" for="">Contrapeso</label>
+                <input type="number" name="" id="contraPeso" placeholder="Ejemplo: 100g">
+                <label class="texto" for="">Largo de la barra:</label>
+                <input type="number" name="" id="barra" placeholder="Ejemplo: 100cm">
+                <input type="button" value="Calcular" class="css-button-shadow--sand" id="boton">
+
+            </article>
+
+        </section>
+
+        <section id="calculoFisica" class="calculoFisica">
+
+        
+
+        </section>
+    
+<script src="./inde.js"></script>
+
+</body>
+</html>
