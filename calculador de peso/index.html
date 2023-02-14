@@ -51,7 +51,7 @@
         font-size: 40px;
         color: aliceblue;
     }
-    #contraPeso, #barra, #pesoBarra {
+    #contraPeso, #barra, #pesoBarra, #pesoCesta {
         margin: 0 0 20px 0;
         height: 50px;
         text-align: center;
@@ -65,8 +65,9 @@
             margin: 0 0 30px 0;
             font-family: 'Caveat', cursive;
             min-width: 130px;
-            height: 30px;
+            height: 40px;
             color: #524f4f;
+            font-size: 25px;
             padding: 5px 10px;
             font-weight: bold;
             cursor: pointer;
@@ -98,6 +99,14 @@
             text-align: center;
           }
 
+          .color1 {
+            color: rgb(220, 3, 3);
+          }
+
+          footer {
+            font-family: 'Caveat', cursive;
+          }
+
 
     </style>
 
@@ -116,10 +125,12 @@
 
                 <label class="texto" for="">Peso de la barra:</label>
                 <input type="number" name="" id="pesoBarra" placeholder="Ejemplo: 100g">
-                <label class="texto" for="">Contrapeso</label>
-                <input type="number" name="" id="contraPeso" placeholder="Ejemplo: 100g">
                 <label class="texto" for="">Largo de la barra:</label>
                 <input type="number" name="" id="barra" placeholder="Ejemplo: 100cm">
+                <label class="texto" for="">Peso de la cesta:</label>
+                <input type="number" name="" id="pesoCesta" placeholder="Ejemplo: 100g">
+                <label class="texto" for="">Contrapeso</label>
+                <input type="number" name="" id="contraPeso" placeholder="Ejemplo: 100g">
                 <input type="button" value="Calcular" class="css-button-shadow--sand" id="boton">
 
             </article>
@@ -131,6 +142,12 @@
         
 
         </section>
+
+        <footer>
+
+            <p>@Josue Hl</p>
+
+        </footer>
     
 <script src="./inde.js"></script>
 
